@@ -1,0 +1,20 @@
+public boolean endOther(String a, String b) {
+  int aLen = a.length();
+	int bLen = b.length();
+	String end;
+	String flag;
+	a = a.toLowerCase();
+	b = b.toLowerCase();
+	if(aLen >= bLen)
+	{
+		end = a.substring(aLen - bLen);
+		flag = b;
+	}
+	else
+	{
+		end = b.substring(bLen - aLen);
+		flag = a;
+	}
+	return (end.equals(flag));
+  
+}
