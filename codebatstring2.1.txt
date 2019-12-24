@@ -1,0 +1,8 @@
+public String doubleChar(String str) {
+  String  sol="";
+  for(int i=0;i<str.length();i++)
+  {
+    sol=sol+str.charAt(i)+str.charAt(i);
+  }
+  return sol;
+}
